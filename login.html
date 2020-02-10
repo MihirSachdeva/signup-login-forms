@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="form">
+
+        <h1 class="heading">Sign In</h1><br><br>
+        <h2>New user?</h2>
+        <h2><a href="./index.html">Sign Up</a> to create new account instead.</h2><br>
+
+        <form class="" name="form" action="#" method="post">
+
+
+          <label for="email">Enter your Email ID</label><br>
+          <input type="text" name="email" placeholder="Email ID"><br>
+          <label class="error email_error" for="email">Please enter a valid Email ID</label>
+
+          <p>OR</p>
+
+          <label for="phone">Enter phone number</label><br>
+          <input type="number" name="phone" placeholder="Phone No."><br>
+          <label class="error phone_error" for="phone">Please enter a valid phone number</label><br><br>
+
+
+          <label for="password">Select a password</label><br>
+          <input type="password" name="password" placeholder="Password">
+          <label for="password" class="error password_error">Incorrect password</label><br>
+          <label for="confirm_password" class="success">Password is correct</label><br>
+
+          <button type="button" name="button" onClick="return validateForm(document.form)">Sign In</button><br><br>
+          <p class="success_message">You have logged in successfully!</p>
+        </form>
+      </div>
+    </div>
+    <script src="./login.js" charset="utf-8"></script>
+  </body>
+</html>

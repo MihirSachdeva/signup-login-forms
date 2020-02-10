@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="form">
+
+        <h1 class="heading">Sign Up</h1><br><br>
+        <h2>Already have an account?</h2>
+        <h2><a href="./login.html">Sign In</a> instead.</h2><br>
+
+        <form class="" name="form" action="#" method="post">
+
+          <label for="name">Enter your name</label><br>
+          <input type="text" name="name" placeholder="Name"><br>
+          <label for="name" class="error name_error">Name is required</label><br><br>
+
+          <label for="age">Enter your age</label><br>
+          <input type="number" name="age" placeholder="Age"><br>
+          <label for="age" class="error age_error">Please enter a valid age</label><br><br>
+
+          <label for="email">Enter your Email ID</label><br>
+          <input type="text" name="email" placeholder="Email ID"><br>
+          <label class="error email_error" for="email">Please enter a valid Email ID</label><br><br>
+
+          <label for="phone">Enter phone number</label><br>
+          <input type="text" name="phone" placeholder="Phone No."><br>
+          <label class="error phone_error" for="phone">Please enter a valid phone number</label><br><br>
+
+          <label for="gender">Select your gender</label><br>
+          <select class="" name="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+            <option value="not_disclose">Prefer not to disclose</option>
+          </select><br><br>
+
+          <label for="city">Enter your city</label><br>
+          <input type="text" name="city" placeholder="City"><br>
+          <label class="error city_error" for="city">Please enter your city</label><br><br>
+
+          <label for="educational_qualifications">Select your educational qualifications</label><br>
+          <select class="" name="educational_qualifications">
+            <option value="10th">10th Standard or equivalent</option>
+            <option value="12th">12th Standard or equivalent</option>
+            <option value="ug">Undergraduate</option>
+            <option value="pg">Postgraduate</option>
+            <option value="mphil">M.Phil.</option>
+            <option value="phd">PhD</option>
+            <option value="none">Other/None</option>
+          </select><br><br>
+
+          <label for="password">Select a password</label><br>
+          <input type="password" name="password" placeholder="Password">
+          &nbsp;
+          <input type="password" name="confirm_password" placeholder="Confirm password"><br>
+          <label for="password" class="error password_error">Please enter a password (minimum 8 characters including atleast <br>1 uppercase, 1 lowercase, 1 digit and 1 special character)</label><br>
+          <label for="confirm_password" class="success">Passwords match</label><br>
+          <label for="confirm_password" class="error confirm_password_error">Passwords do not match</label><br><br>
+
+          <button type="button" name="button" onClick="return validateForm(document.form)">Validate Form</button><br>
+          <p class="success_message">Form validated successfully!</p>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js" charset="utf-8"></script>
+  </body>
+</html>
